@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JS Assignment - 1</title>
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+
+        th {
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="https://letsupgrade.in/assets/logo.png" alt="letsupgrade" width="200px" />
+        <h2>JavaScript Essentials Assignment - 1</h2>
+    </div>
+    <br>
+    <hr><br>
+    <div>
+        <h3>Q1. Various Console Methods in JavaScript</h2>
+            <span><b>Ans.</b></span>
+            <table>
+                <tr>
+                    <th>Function Name</th>
+                    <th>Description</th>
+
+                </tr>
+                <tr>
+                    <td>log()</td>
+                    <td>Outputs a message to console</td>
+                </tr>
+                <tr>
+                    <td>warn()</td>
+                    <td>Outputs a warning message to the console
+                    </td>
+                </tr>
+                <tr>
+                    <td>assert()</td>
+                    <td>Writes an error message to the console if the assertion is false
+                    </td>
+                </tr>
+                <tr>
+                    <td>clear()</td>
+                    <td>Clears the console
+                    </td>
+                </tr>
+                <tr>
+                    <td>count()</td>
+                    <td>Logs the number of times that this particular call to count() has been called
+                    </td>
+                </tr>
+                <tr>
+                    <td>error()</td>
+                    <td>Outputs an error message to the console
+                    </td>
+                </tr>
+
+            </table>
+    </div>
+    <br>
+    <hr><br>
+    <div>
+        <h3>Q2. Difference between var, let and const with examples</h3>
+    </div>
+    <div>
+        <span><b>Ans.</b></span>
+        <p><b><i>var - </i></b>
+            Var is a keyword used to declare variables. <br>
+
+            Variables declared with the var keyword cannot have Block Scope. <br>
+
+            Variables declared inside a block {} can be accessed from outside the block.
+
+
+            <pre>
+                function getDate () {
+                var date = new Date()
+
+                return date
+                }
+
+                getDate()
+                console.log(date)
+                </pre>
+        </p>
+
+        <p><b><i>let - </i></b>
+            Let is a keyword used to declare variables. <br>
+
+            Variables declared with the let keyword can have Block Scope.<br>
+
+            Variables declared inside a block {} cannot be accessed from outside the block:
+
+            <pre>
+                {
+                    var x = 2;
+                  }
+                  // x can be used here
+                  
+                </pre>
+        </p>
+
+        <p><b><i>Const - </i></b>
+            Declaring a variable with const is similar to let when it comes to Block Scope except they cannot be
+            reassigned. <br>
+
+            The x declared in the block, in this example, is not the same as the x declared outside the block: <br>
+
+            <pre>
+                const PI = 3.141592653589793;
+                PI = 3.14;      // This will give an error
+                PI = PI + 10;   // This will also give an error
+                
+                </pre>
+        </p>
+
+    </div>
+
+
+    <!-- Question No. 3 -->
+    <br>
+    <hr><br>
+    <div>
+        <h3>Q3. Write a brief intro on available DataTypes in JavaScript</h3>
+    </div>
+    <div>
+        <span><b>Ans.</b></span>
+        <p>
+            JavaScript includes primitive and non-primitive data types as per ECMAScript.
+            <br><br><br>
+            <b>Primitive Data Types</b>
+            <ul>
+                <li> String</li>
+                <li>Number</li>
+                <li>Boolean</li>
+                <li>Null</li>
+                <li>Undefined</li>
+            </ul>
+
+            <b>Non-primitive Data Types</b>
+            <ul>
+                <li>Object</li>
+                <li>Date</li>
+                <li>Array</li>
+            </ul>
+            JavaScript is a dynamic or loosely-typed language because a variable can hold value of any data type at any point of time.
+        </p>
+
+    </div>
+
+</body>
+
+</html>
