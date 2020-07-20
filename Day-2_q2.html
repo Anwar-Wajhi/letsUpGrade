@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Input</title>
+    <style>
+      * {
+        font-family: sans-serif;
+      }
+      th, td{
+        padding:10px;
+      }
+      pre{
+        font-family: 'Courier New', Courier, monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img
+        src="https://letsupgrade.in/assets/logo.png"
+        alt="letsupgrade"
+        width="200px"
+      />
+      <h2>JavaScript Essentials Assignment - Day 2</h2>
+      <br />
+      <hr />
+      <br />
+    </div>
+
+    <!-- Question No. 2 -->
+    
+    <h3>
+      Q.2 Explain with examples the remaining methods of String and Array
+    </h3>
+    <p>Ans. JavaScript arrays are used to store multiple values in a single variable.
+      <pre>Ex: var pens = ["ball", "gel", "ink"];
+      </pre>
+      <p><b>Various Array and String methods in JavaScript</b>
+        <br>
+        <table border="1" >
+          <tr>
+            <th>Method</th>
+            <th>Description</th>
+            <th>Example</th>
+          </tr>
+        <tr>
+          <!-- toString() -->
+          <td>toString()</td>
+          <td>The JavaScript method toString() converts an array to a string of (comma separated) array values.</td>
+          <td>
+<pre>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.toString();
+
+Result:
+Banana,Orange,Apple,Mango
+</pre>
+          </td>
+        </tr>
+        <tr>
+          <!-- pop() -->
+          <td>pop()</td>
+          <td>The pop() method removes the last element from an array:</td>
+          <td>
+<pre>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.pop();
+// Removes the last element ("Mango") from fruits
+</pre>
+          </td>
+        </tr>
+
+        <!-- push() -->
+        <tr>
+          <td>push()</td>
+          <td>The push() method adds a new element to an array (at the end):</td>
+          <td>
+<pre>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.push("Kiwi");
+//  Adds a new element ("Kiwi") to fruits
+</pre>
+          </td>
+        </tr>
+
+        <!-- shift() -->
+        <tr>
+          <td>shift()</td>
+          <td>The shift() method removes the first array element and "shifts" all other elements to a lower index.</td>
+          <td>
+<pre>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.shift();
+// Removes the first element "Banana" from fruits
+</pre>
+          </td>
+        </tr>
+
+        <!-- unshift() -->
+        <tr>
+          <td>unshift()</td>
+          <td>The unshift() method adds a new element to an array (at the beginning), and "unshifts" older elements:</td>
+          <td>
+<pre>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.unshift("Lemon");
+// Adds a new element "Lemon" to fruits
+</pre>
+          </td>
+        </tr>
+
+        <!-- splice() -->
+        <tr>
+          <td>splice()</td>
+            <td>The splice() method can be used to add new items to an array. <br>
+            The first parameter (2) defines the position where new elements should be added (spliced in). <br>
+            The second parameter (0) defines how many elements should be removed. <br>
+            The rest of the parameters ("Lemon" , "Kiwi") define the new elements to be added. <br>
+            The splice() method returns an array with the deleted items:
+              
+          </td>
+          <td>
+<pre>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.splice(2, 0, "Lemon", "Kiwi");
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.splice(2, 2, "Lemon", "Kiwi");
+</pre>
+  </td>
+        </tr>
+
+        <!-- slice() -->
+        <tr>
+          <td>slice()</td>
+            <td>The slice() method slices out a piece of an array into a new array.
+            <br>
+            This example slices out a part of an array starting from array element 1 ("Orange"): <br>
+            
+              
+          </td>
+          <td>
+<pre>
+var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+var citrus = fruits.slice(1);
+</pre>
+  </td>
+        </tr>
+
+        <!-- concat() -->
+        <tr>
+          <td>concat()</td>
+            <td>The concat() method creates a new array by merging (concatenating) existing arrays:
+            <br>
+            This example slices out a part of an array starting from array element 1 ("Orange"): <br>
+            The concat() method does not change the existing arrays. It always returns a new array. <br>
+            The concat() method can take any number of array arguments:
+          </td>
+          <td>
+<pre>
+var myGirls = ["Cecilie", "Lone"];
+var myBoys = ["Emil", "Tobias", "Linus"];
+var myChildren = myGirls.concat(myBoys);
+// Concatenates (joins) myGirls and myBoys
+</pre>
+  </td>
+        </tr>
+
+        <!-- delete -->
+        <tr>
+          <td>delete</td>
+            <td>Since JavaScript arrays are objects, elements can be deleted by using the JavaScript operator delete:
+            
+          </td>
+          <td>
+<pre>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+delete fruits[0];
+// Changes the first element in fruits to undefined
+</pre>
+  </td>
+        </tr>
+        </table>
+      </p>
+    </p>
+
+    <!-- Question No. 3 -->
+    <br />
+    <hr />
+    <br />
+    <h3>
+      Q.3 Ask the user if he is 21+ and log the value "Can drink", "Cannot Drink"
+    </h3>
+    <p>Ans. <br> 
+        <p></p>
+
+    </p>
+
+  </body>
+</html>

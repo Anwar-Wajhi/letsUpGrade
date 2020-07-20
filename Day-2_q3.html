@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Input</title>
+    <style>
+      * {
+        font-family: sans-serif;
+      }
+      th,
+      td {
+        padding: 10px;
+      }
+      pre {
+        font-family: "Courier New", Courier, monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img
+        src="https://letsupgrade.in/assets/logo.png"
+        alt="letsupgrade"
+        width="200px"
+      />
+      <h2>JavaScript Essentials Assignment - Day 2</h2>
+      <br />
+      <hr />
+      <hr />
+      <br />
+    </div>
+
+    <!-- Question No. 3 -->
+
+    <h3>
+      Q.3 Ask the user if he is 21+ and log the value "Can drink", "Cannot
+      Drink"
+    </h3>
+    <p>Ans. Open developer tools (Console) to see the answer</p>
+
+    <script>
+      // take user input using prompt()
+
+      let name = prompt("What is your age?");
+      if (name >= 21) {
+        console.log("You can drink");
+      } else {
+        console.log("you are too young to drink");
+      }
+    </script>
+  </body>
+</html>
